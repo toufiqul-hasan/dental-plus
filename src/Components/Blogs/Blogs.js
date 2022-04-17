@@ -3,7 +3,7 @@ import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div className="qna">
+    <div className="qna mb-5">
       <h2>Question & Answer</h2>
       <hr />
       <h4>

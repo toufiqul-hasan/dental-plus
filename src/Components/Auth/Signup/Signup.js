@@ -92,7 +92,7 @@ const Signup = () => {
     }, [user]);
 
     return (
-        <div className="login-container">
+        <div className="login-container mt-3">
             <div className="login-title">Sign up</div>
             <form className="login-form" onSubmit={handleLogin}>
                 <input type="text" placeholder="Your Email" onChange={handleEmailChange} />
