@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { Nav } from "react-bootstrap";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "../../../firebase.init";
+import  google  from "../../../Assets/Images/google.png"
 import "./Login.css";
-
 
 const Login = () => {
     const [userInfo, setUserInfo] = useState({
@@ -87,6 +88,8 @@ const Login = () => {
         }
     }, [hookError, googleError])
 
+
+
     return (
         <div className="login-container mt-3">
             <div className="login-title">LOGIN</div>
@@ -96,15 +99,17 @@ const Login = () => {
                 <input type="password" placeholder="Your Password" onChange={handlePasswordChange} />
                 {errors?.password && <p className="error-message">{errors.password}</p> }
                 <button>Login</button>
-
-                {/* {error && <p className="error-message">{error}</p> } */}
-                {/* {hookError && <p className="error-message">{hookError?.message}</p>} */}
                 <ToastContainer />
-                <br />
-                <p>Don't have an account? <Link to="/signup">Sign up first</Link> </p>
+                <Nav.Link as={Link} to="/resetPassword">Forgot password? Reset it!</Nav.Link>
+                <Nav.Link as={Link} to="/signup">Don't have an account? Sign Up!</Nav.Link>
             </form>
-
-            <button onClick={() => signInWithGoogle()}>Google</button>
+            <div className='d-flex align-items-center'>
+                <div style={{ height: '1px' }} className='bg-primary w-50'></div>
+                <p className='mt-2 px-2'>Or</p>
+                <div style={{ height: '1px' }} className='bg-primary w-50'></div>
+            </div>
+            <button onClick={() => signInWithGoogle()} ><img style={{ width: '30px' }} src={google} alt="" />
+                    <span className='px-2'>Log in with Google</span></button>
         </div>
     );
 };

@@ -93,17 +93,17 @@ const Signup = () => {
 
     return (
         <div className="login-container mt-3">
-            <div className="login-title">Sign up</div>
+            <div className="login-title">SIGN UP</div>
             <form className="login-form" onSubmit={handleLogin}>
                 <input type="text" placeholder="Your Email" onChange={handleEmailChange} />
                 {errors?.email && <p className="error-message">{errors.email}</p>}
                 <div className="relative">
-                    <input type={showPass ? "text" : "password"} placeholder="password" onChange={handlePasswordChange} />
+                    <input type={showPass ? "text" : "password"} placeholder="Your Password" onChange={handlePasswordChange} />
                     {errors?.password && <p className="error-message">{errors.password}</p>}
                 </div>
                 <input
                     type="password"
-                    placeholder="confirm password"
+                    placeholder="Confirm Password"
                     onChange={handleConfirmPasswordChange}
                 />
 

@@ -8,3 +8,16 @@
   margin: 5%;
   text-align: justify;
 }
+
+@media (max-width:800px) {
+  .about img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .about P {
+    margin-bottom: 20%;
+    text-align: justify;
+  }
+}
