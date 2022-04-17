@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { Nav } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "../../../firebase.init";
@@ -119,6 +120,15 @@ const Signup = () => {
         <button>Sign up</button>
         <ToastContainer />
       </form>
+      <br />
+      <div className="d-flex align-items-center">
+        <div style={{ height: "1px" }} className="bg-primary w-50"></div>
+        <p className="mt-2 px-2">Or</p>
+        <div style={{ height: "1px" }} className="bg-primary w-50"></div>
+      </div>
+      <Nav.Link as={Link} to="/login">
+        Already have an account? Login!
+      </Nav.Link>
     </div>
   );
 };

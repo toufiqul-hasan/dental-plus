@@ -100,7 +100,7 @@ const Login = () => {
         <button>Login</button>
         <ToastContainer />
         <Nav.Link as={Link} to="/resetPassword">
-          Forgot password? Reset it!
+          Forgot your password? Reset it!
         </Nav.Link>
         <Nav.Link as={Link} to="/signup">
           Don't have an account? Sign Up!

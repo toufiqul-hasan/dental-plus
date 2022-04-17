@@ -1,4 +1,5 @@
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const Newsletter = () => {
   const handleLogin = (e) => {
@@ -10,8 +11,17 @@ const Newsletter = () => {
       <p className="text-center">Get 10% off your first check up!</p>
       <form className="login-form" onSubmit={handleLogin}>
         <input type="text" placeholder="Your Name" />
-        <input type="text" placeholder="Your Email" />
-        <button>Submit</button>
+        <input type="email" placeholder="Your Email" />
+        <button
+          onClick={() => {
+            toast(
+              "Thank you for subscribing to my newsletter. 10% off coupon code sent to your email. Please check your inbox!"
+            );
+          }}
+        >
+          Submit
+        </button>
+        <ToastContainer />
       </form>
     </div>
   );

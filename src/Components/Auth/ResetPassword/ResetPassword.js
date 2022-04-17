@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Nav } from "react-bootstrap";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
+import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { auth } from "../../../firebase.init";
 
@@ -10,7 +12,7 @@ const ResetPassword = () => {
   const handleLogin = (e) => {
     e.preventDefault();
   };
-  
+
   return (
     <div>
       <div className="login-container mt-3">
@@ -31,6 +33,10 @@ const ResetPassword = () => {
             Submit
           </button>
           <ToastContainer />
+          <br />
+          <Nav.Link as={Link} to="/login">
+            Password reseted? Then Login!
+          </Nav.Link>
         </form>
       </div>
     </div>
