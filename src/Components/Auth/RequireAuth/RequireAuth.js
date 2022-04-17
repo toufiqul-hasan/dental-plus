@@ -10,7 +10,6 @@ const RequireAuth = ({children}) => {
     if(loading){
         return <p>Loading</p>
     }
-    
     if(user){
         return children;
     } else{

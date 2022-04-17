@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import { toast, ToastContainer } from "react-toastify";
 import { auth } from "../../../firebase.init";
@@ -7,9 +7,10 @@ const ResetPassword = () => {
   const [email, setEmail] = useState("");
   const [sendPasswordResetEmail, sending, Eerror] =
     useSendPasswordResetEmail(auth);
-    const handleLogin = (e) => {
-      e.preventDefault();
-    };
+  const handleLogin = (e) => {
+    e.preventDefault();
+  };
+  
   return (
     <div>
       <div className="login-container mt-3">
@@ -24,7 +25,7 @@ const ResetPassword = () => {
           <button
             onClick={async () => {
               await sendPasswordResetEmail(email);
-              toast("Email Sent");
+              toast("Email sent. Please check your inbox!");
             }}
           >
             Submit
