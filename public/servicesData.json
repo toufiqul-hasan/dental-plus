@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Dental Implant",
+    "price": "$300",
+    "description": "Years of experience! Specialist care. You will be able to chew properly again!",
+    "img": "https://kodesolution.com/html/2017/dentalpro-html-b5/images/blog/1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Dental Braces",
+    "price": "$200",
+    "description": "Don't worry about irregular teeth. You will smile again confidently.",
+    "img": "https://kodesolution.com/html/2017/dentalpro-html-b5/images/blog/2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Teeth Whitening",
+    "price": "$100",
+    "description": "Rejuvenate your smile with brighter, white teeth!",
+    "img": "https://kodesolution.com/html/2017/dentalpro-html-b5/images/blog/4.jpg"
+  }
+]

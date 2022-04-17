@@ -1,0 +1,17 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0 10%;
+}
+
+.services img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
