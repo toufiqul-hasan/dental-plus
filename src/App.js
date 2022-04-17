@@ -5,7 +5,7 @@ import Blogs from "./Components/Blogs/Blogs";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Auth/Login/Login";
-import Navbar from "./Components/Navbar/Navbar";
+import Header from "./Components/Header/Header";
 import NotFound from "./Components/NotFound/NotFound";
 import Services from "./Components/Services/Services";
 import Signup from "./Components/Auth/Signup/Signup";
@@ -15,7 +15,7 @@ import Checkout from "./Components/Checkout/Checkout";
 function App() {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
