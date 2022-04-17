@@ -27,3 +27,7 @@ nav {
   transition: color ease-in-out 300ms;
   color: #8C8C8C !important;
 }
+
+.logo img {
+  width: 70%;
+}

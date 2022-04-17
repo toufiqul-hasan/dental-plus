@@ -3,7 +3,7 @@ import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div className="container qna">
+    <div className="qna">
       <h2>Question & Answer</h2>
       <hr />
       <h4>
@@ -53,6 +53,8 @@ const Blogs = () => {
         Although there is a pay as you go services but I can start on a free
         plan & use primary features. <br />
         There are many alternatives to firebase authentication. They are:
+      </p>
+      <div>
         <ul>
           <li>Amazon Cognito</li>
           <li>Auth0</li>
@@ -63,7 +65,7 @@ const Blogs = () => {
           <li>Okta</li>
           <li>OneLogin</li>
         </ul>
-      </p>
+      </div>
       <h4>
         Question 3: What other services does firebase provide other than
         authentication?
@@ -71,6 +73,8 @@ const Blogs = () => {
       <p>
         Answer: There are many services provides by Firebase. Most useful of
         them are:
+      </p>
+      <div>
         <ul>
           <li>Cloud Firestore</li>
           <li>Cloud Functions</li>
@@ -82,7 +86,7 @@ const Blogs = () => {
           <li>Predictions</li>
           <li>Hosting</li>
         </ul>
-      </p>
+      </div>
     </div>
   );
 };

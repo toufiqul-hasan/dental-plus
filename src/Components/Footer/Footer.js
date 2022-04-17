@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <p className="mt-3">&copy; Dental Plus 2022 All Rights Reserved.</p>
+      <p>&copy; Dental Plus 2022 All Rights Reserved.</p>
     </div>
   );
 };

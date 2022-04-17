@@ -1,4 +1,10 @@
-P {
+.about img {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+.about P {
   margin: 5%;
   text-align: justify;
 }
