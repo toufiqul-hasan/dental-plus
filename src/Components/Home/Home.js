@@ -1,6 +1,7 @@
 import React from "react";
 import useServices from "../../hooks/useServices";
 import Banner from "../Banner/Banner";
+import Newsletter from "../Newsletter/Newsletter";
 import Service from "../Service/Service";
 import "./Home.css";
 
@@ -18,6 +19,9 @@ const Home = () => {
             <Service key={service.id} service={service}></Service>
           ))}
         </div>
+      </div>
+      <div>
+        <Newsletter />
       </div>
     </div>
   );
