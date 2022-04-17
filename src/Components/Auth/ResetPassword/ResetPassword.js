@@ -15,7 +15,7 @@ const ResetPassword = () => {
 
   return (
     <div>
-      <div className="login-container mt-3">
+      <div className="login-container mt-3 mb-5">
         <div className="login-title">Reset Password</div>
         <form className="login-form" onSubmit={handleLogin}>
           <input
@@ -23,7 +23,9 @@ const ResetPassword = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email"
+            required
           />
+          <br />
           <button
             onClick={async () => {
               await sendPasswordResetEmail(email);

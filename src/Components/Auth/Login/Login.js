@@ -82,23 +82,26 @@ const Login = () => {
   }, [hookError, googleError]);
 
   return (
-    <div className="login-container mt-3">
+    <div className="login-container mt-3 mb-5">
       <div className="login-title">LOGIN</div>
       <form className="login-form" onSubmit={handleLogin}>
         <input
           type="text"
           placeholder="Your Email"
           onChange={handleEmailChange}
+          required
         />
         {errors?.email && <p className="error-message">{errors.email}</p>}
         <input
           type="password"
           placeholder="Your Password"
           onChange={handlePasswordChange}
+          required
         />
         {errors?.password && <p className="error-message">{errors.password}</p>}
         <button>Login</button>
         <ToastContainer />
+        <br />
         <Nav.Link as={Link} to="/resetPassword">
           Forgot your password? Reset it!
         </Nav.Link>
