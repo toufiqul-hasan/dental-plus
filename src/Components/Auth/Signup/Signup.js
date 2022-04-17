@@ -63,7 +63,6 @@ const Signup = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log(userInfo);
     createUserWithEmailAndPassword(userInfo.email, userInfo.password);
   };
 
