@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA5cmSNoaDxW6UvdURoGU8JxrBj6OZoTaw",
-  authDomain: "dental-plus-dr.firebaseapp.com",
-  projectId: "dental-plus-dr",
-  storageBucket: "dental-plus-dr.appspot.com",
-  messagingSenderId: "446716229190",
-  appId: "1:446716229190:web:b6e7dcef958f9e9a7a3c47",
+  apiKey:process.env.REACT_APP_apiKey,
+  authDomain:process.env.REACT_APP_authDomain,
+  projectId:process.env.REACT_APP_projectId,
+  storageBucket:process.env.REACT_APP_storageBucket,
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  appId:process.env.REACT_APP_appId,
 };
 
 const app = initializeApp(firebaseConfig);
