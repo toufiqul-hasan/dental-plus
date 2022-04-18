@@ -1,6 +1,20 @@
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  background: #0A0826;
+  padding: 25px;
+}
+
+.footer h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font: 14px;
+  color: #ffffff;
+  text-align: center;
 }

@@ -3,8 +3,10 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer bg-light text-center">
-      <p>&copy; Dental Plus 2022 All Rights Reserved</p>
+    <div className="footer mt-auto">
+      <h2>Dental Plus</h2>
+      <p>Copyright &copy; 2022 Dental Plus</p>
+      <p>All Rights Reserved</p>
     </div>
   );
 };

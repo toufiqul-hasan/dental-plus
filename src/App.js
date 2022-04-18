@@ -15,7 +15,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
