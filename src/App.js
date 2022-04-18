@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import About from "./Components/About/About";
 import Blogs from "./Components/Blogs/Blogs";
 import Footer from "./Components/Footer/Footer";
@@ -12,6 +11,7 @@ import Signup from "./Components/Auth/Signup/Signup";
 import RequireAuth from "./Components/Auth/RequireAuth/RequireAuth";
 import Checkout from "./Components/Checkout/Checkout";
 import ResetPassword from "./Components/Auth/ResetPassword/ResetPassword";
+import "./App.css";
 
 function App() {
   return (

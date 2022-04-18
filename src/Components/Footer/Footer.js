@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer bg-light text-center">
-      <p>&copy; Dental Plus 2022 All Rights Reserved.</p>
+      <p>&copy; Dental Plus 2022 All Rights Reserved</p>
     </div>
   );
 };

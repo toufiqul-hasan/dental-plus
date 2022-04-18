@@ -4,11 +4,11 @@
 
 ## Description:
 
-- This website made with [Create React App](https://github.com/facebook/create-react-app).
 - This website offers dental checkups.
 - Patient can easily create their user account.
 - After successfully account creation patient can book their checkups.
 - User can reset their login password.
+- User can also log in using Google.
 
 ## Technologies Used:
 

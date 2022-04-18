@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { Nav } from "react-bootstrap";
-import {
-  useSignInWithEmailAndPassword,
-  useSignInWithGoogle,
-} from "react-firebase-hooks/auth";
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -19,10 +16,8 @@ const Login = () => {
     general: "",
   });
 
-  const [signInWithEmail, user, loading, hookError] =
-    useSignInWithEmailAndPassword(auth);
-  const [signInWithGoogle, googleUser, loading2, googleError] =
-    useSignInWithGoogle(auth);
+  const [signInWithEmail, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
+  const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
 
   const handleEmailChange = (e) => {
     const emailRegex = /\S+@\S+\.\S+/;

@@ -3,7 +3,6 @@ import useServices from "../../hooks/useServices";
 import Banner from "../Banner/Banner";
 import Newsletter from "../Newsletter/Newsletter";
 import Service from "../Service/Service";
-import "./Home.css";
 
 const Home = () => {
   const [services] = useServices([]);
