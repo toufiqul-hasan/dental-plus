@@ -1,21 +1,5 @@
-.qna {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 0 10%;
-}
-
-.qna h2 {
-  text-align: center;
-}
-
-.qna h4 {
-  margin-top: 30px;
-  font-weight: 500;
-}
-
 .qna p {
   text-align: justify;
-  font-weight: 400;
 }
 
 .qna table {

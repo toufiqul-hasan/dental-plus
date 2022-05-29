@@ -4,8 +4,7 @@ import "./About.css";
 const About = () => {
   
   return (
-    <div>
-      <div className="about">
+    <div className="container mt-5 about">
         <p>
           Hi, I'm <b>Toufiqul Hasan</b>. I want to become a web developer in
           2022. My goal is become a full stack web developer. I consider myself
@@ -14,7 +13,6 @@ const About = () => {
           self-development, having career advancement, and help me achieve
           personal as well as organizational goals.
         </p>
-      </div>
     </div>
   );
 };

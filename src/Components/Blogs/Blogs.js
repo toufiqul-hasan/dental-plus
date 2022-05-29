@@ -3,11 +3,9 @@ import "./Blogs.css";
 
 const Blogs = () => {
   return (
-    <div className="qna mb-5">
-      <h2>Question & Answer</h2>
-      <hr />
+    <div className="container mt-5 qna">
       <h4>
-        Question 1: What is the difference between authorization &
+        What is the difference between authorization &
         authentication?
       </h4>
       <p>Answer: </p>
@@ -40,9 +38,9 @@ const Blogs = () => {
             <td>Authorization data moves through access tokens.</td>
           </tr>
         </tbody>
-      </table>
+      </table> <br />
       <h4>
-        Question 2: Why are you using firebase? What other options do you have
+        Why are you using firebase? What other options do you have
         to implement authentication?
       </h4>
       <p>
@@ -67,7 +65,7 @@ const Blogs = () => {
         </ul>
       </div>
       <h4>
-        Question 3: What other services does firebase provide other than
+        What other services does firebase provide other than
         authentication?
       </h4>
       <p>
