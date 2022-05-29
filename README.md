@@ -2,13 +2,13 @@
 
 ## Live Link: https://dental-plus-dr.web.app
 
-## Description:
+## Features:
 
 - This website offers dental checkups.
-- Patient can easily create their user account.
-- After successfully account creation patient can book their checkups.
-- User can reset their login password.
-- User can also log in using Google.
+- Patients can easily create their account.
+- Patients can book their checkups after successfully creating an account.
+- Patients can also log in using Google.
+- Patients can also reset their login password.
 
 ## Technologies Used:
 
