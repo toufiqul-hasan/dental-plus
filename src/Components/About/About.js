@@ -1,13 +1,10 @@
 import React from "react";
 import "./About.css";
-import me from "../../Assets/Images/me.png";
 
 const About = () => {
+  
   return (
     <div>
-      <div className="about">
-        <img src={me} alt="" />
-      </div>
       <div className="about">
         <p>
           Hi, I'm <b>Toufiqul Hasan</b>. I want to become a web developer in
